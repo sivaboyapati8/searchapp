@@ -1,0 +1,20 @@
+<div class="container" ng-controller="homeController">
+	<div class="row">
+			<div class="right-inner-addon ">
+				<i class="icon-search"></i>
+				<input type="search" ng-model="search"
+							 class="form-control"
+							 placeholder="Search"/>
+			</div>
+		<div style="margin: 30px" ng-repeat="c in contacts |filter:search" class="col-md-2 col-sm-4">
+			<div class="rcorners2" style="text-align: center;margin: 5px">
+				<div><h5 class="namestyle">{{c.name}}</h5></div>
+				<div><p>Gender:{{c.gender}}</p></div>
+				<div><p>City:{{c.city}}</p></div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
